@@ -7,4 +7,4 @@ COPY ./postgres /sources/postgres
 
 RUN chmod +x /sources/entrypoint.sh
 
-ENTRYPOINT [ "/sources/entrypoint.sh" ]
+ENTRYPOINT [ "sh", "/sources/entrypoint.sh" ]
